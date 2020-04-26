@@ -21,19 +21,5 @@ namespace CodePolyglot.Models.Resume
         public List<Experience> Experiences { get; set; }
 
         public List<Education> Schools { get; set; }
-
-        public IEnumerable<IGrouping<int, string>> PartitionedTechnologies()
-        {
-            if (Technologies == null)
-            {
-                return new List<IGrouping<int, string>>();
-            }
-
-            return Technologies.Select((i, index) => new
-            {
-                i,
-                index
-            }).GroupBy(group => group.index / 3, element => element.i);
-        }
     }
 }
