@@ -1,0 +1,22 @@
+﻿@model CodePolyglot.Models.Resume.Education
+<div class="row">
+    <div class="col">
+        @Html.DisplayFor(m => m.SchoolName)
+    </div>
+    <div class="col font-italic">
+        @Html.DisplayFor(m => m.SchoolCity)
+    </div>
+</div>
+<div class="row ml-5">
+    <ul>
+        <li>
+            @Html.DisplayFor(m => m.Degree) - @Html.DisplayFor(m => m.Field)
+        </li>
+        <li>
+            @Html.DisplayFor(m => m.ExtraDetail)
+        </li>
+        <li>
+            Cumulative GPA: @Html.DisplayFor(m => m.GradePointAverage)
+        </li>
+    </ul>
+</div>

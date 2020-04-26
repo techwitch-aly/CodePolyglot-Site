@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CodePolyglot.Models;
+using CodePolyglot.Models.Resume;
 
 namespace CodePolyglot.Controllers
 {
@@ -19,11 +20,6 @@ namespace CodePolyglot.Controllers
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Resume()
         {
             return View();
         }

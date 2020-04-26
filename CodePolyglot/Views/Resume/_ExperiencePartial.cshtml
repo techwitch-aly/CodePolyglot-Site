@@ -1,0 +1,30 @@
+﻿@model CodePolyglot.Models.Resume.Experience
+
+<div class="container @(Model.Details == null ? "mb-2" : "")">
+    <div class="row">
+        <div class="col font-italic">
+            @Html.DisplayFor(m => m.Title)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            @Html.DisplayFor(m => m.CompanyName)
+        </div>
+        <div class="col">
+            @Html.DisplayFor(m => m.StartDate) - @(Model.EndDate.HasValue ? @Html.DisplayFor(m => m.EndDate) : Html.Raw("Present"))
+        </div>
+    </div>
+    @if (Model.Details != null)
+    {
+        <div class="row ml-5">
+            <ul>
+                @foreach (string detail in Model.Details)
+                {
+                    <li>
+                        @Html.Raw(detail)
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>
