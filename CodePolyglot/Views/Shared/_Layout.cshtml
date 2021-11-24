@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.min.css" />
     <script src="https://kit.fontawesome.com/afa3781770.js" crossorigin="anonymous"></script>
-    @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
     <header>
@@ -67,7 +66,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    @Html.Raw(JavaScriptSnippet.FullScript)
     @RenderSection("Scripts", required: false)
 </body>
 </html>
