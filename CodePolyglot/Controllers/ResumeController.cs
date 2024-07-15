@@ -16,6 +16,9 @@ namespace CodePolyglot.Controllers
                 Summary = "Lead Software Engineer and Technical Architect with experience leading multiple teams on different products (4 to 6 developers per team). Experienced with designing technical solutions and communicating those solutions to business stakeholders and developers. 7+ years experience with Java, C#, JavaScript, MS SQL Server, and Microsoft Azure.",
                 Technologies = new List<string>
                 {
+                    "Team Leadership",
+                    "Site Reliability Engineering",
+                    "SDLC Consulting",
                     "C#",
                     "Java / Spring",
                     "JavaScript / jQuery",
@@ -51,8 +54,21 @@ namespace CodePolyglot.Controllers
                 {
                     new Experience
                     {
-                        CompanyName = "BDO Digital, LLC",
+                        CompanyName = "BDO USA",
+                        StartDate = new DateTime(2022, 8, 1),
+                        Title = "Senior Manager, DevOps & SRE",
+                        Details = new List<string>
+                        {
+                            "Leading the DevOps and SRE Practice",
+                            "Responsible for Go-To-Market activities related to offerings and client satisfaction",
+                            "Team leader for DevOps and Site Reliability Engineers and Architects"
+                        }
+                    },
+                    new Experience
+                    {
+                        CompanyName = "BDO USA",
                         StartDate = new DateTime(2020, 1, 18),
+                        EndDate = new DateTime(2022, 8, 1),
                         Title = "Solution Architect - Apps Group",
                         Details = new List<string>
                         {
